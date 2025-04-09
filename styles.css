@@ -16,8 +16,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    width: 100%;
-    max-width: 600px;
+    
 
   }
   
@@ -26,8 +25,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 3rem;
-    width: 100%;
-    max-width: 600px;
+    
 
   }
   
@@ -51,8 +49,7 @@
   .section {
     padding: 5rem 3rem;
     min-height: 100vh;
-    width: 100%;
-    max-width: 600px;
+  
 
   }
   
@@ -94,8 +91,7 @@
     padding: 2rem;
     background: #fff;
     font-size: 0.9rem;
-    width: 100%;
-    max-width: 600px;
+    
 
   }
   
@@ -587,8 +583,7 @@ body.dark .home {
     animation: typing-p 3s steps(50, end) forwards, blink-caret 0.75s step-end infinite;
     animation-delay: 3.2s;
     animation-fill-mode: forwards;
-    width: 100%;
-    max-width: 600px;
+   
 
   }
   
@@ -600,8 +595,7 @@ body.dark .home {
   .typewriter-p::after {
     content: '';
     animation: hide-caret 0s 6.3s forwards; 
-    width: 100%;
-    max-width: 600px;
+    
 
   }
   
@@ -657,9 +651,7 @@ body.dark .home {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
   color: #333;
-  width: 100%;
-  max-width: 600px;
-
+  
 }
 
 .cert-card:hover {
@@ -700,8 +692,7 @@ body.dark .cert-card {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3rem;
-  width: 100%;
-  max-width: 600px;
+  
 
 }
 
