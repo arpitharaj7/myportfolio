@@ -1,4 +1,3 @@
-this is my css code 
 
 
 * {
@@ -736,42 +735,4 @@ img {max-width: 100%;
   p {
     font-size: 1rem;
   }
-}
-.
-.projects {
-  width: 100%;
-  max-width: 1200px; /* limit max width on big screens */
-  margin: 0 auto; /* center horizontally */
-  padding: 0 1rem; /* side padding for mobile */
-}
-.hero {
-  padding: 4rem 1rem;
-  text-align: center;
-}
-
-.hero-content {
-  max-width: 600px;
-  margin: 0 auto;
-  word-break: break-word; /* important! */
-}
-
-.hero-content h2 {
-  font-size: 3rem;
-}
-
-.hero-content p {
-  font-size: 1.3rem;
-}
-
-/* responsive fix for mobile */
-@media (max-width: 768px) {
-  .hero-content h2 {
-    font-size: 2rem;
-  }
-  .hero-content p {
-    font-size: 1rem;
-  }
-}
-body {
-  overflow-x: hidden;
 }
