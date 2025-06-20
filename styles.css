@@ -734,8 +734,8 @@ img {max-width: 100%;
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;   
-  padding: 2rem; 
+  gap: 5rem;   
+  padding: 5rem; 
 }
 
 
