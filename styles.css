@@ -730,3 +730,27 @@ img {max-width: 100%;
     font-size: 1rem;
   }
 }
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-link {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff8c94;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover .card-link {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
+}
