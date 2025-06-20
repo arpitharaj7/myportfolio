@@ -1,3 +1,6 @@
+this is my css code 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -192,9 +195,9 @@
   
   .toggle-dark {
     position: fixed;
-    top: 1.5rem;      /* add some spacing from the top */
-    right: 2rem;      /* space from the right */
-    z-index: 9999;    /* stays on top of everything */
+    top: 1.5rem;      
+    right: 2rem;      
+    z-index: 9999;   
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
     border-radius: 50px;
@@ -251,7 +254,7 @@
     
   }
   
-  /* sections that have white background by default */
+
   body.dark header,
   body.dark footer,
   body.dark .skill,
@@ -293,7 +296,7 @@
     padding: 2rem;
   }
 
-  /* fix for home section text visibility in dark mode */
+
 body.dark .home {
     background-color: #1e1e1e;
     color: #f1f1f1;
@@ -305,7 +308,7 @@ body.dark .home p {
   color: #f1f1f1;
 }
 
-/* full fix for dark mode visibility in home section */
+
 body.dark #home,
 body.dark .home,
 body.dark .home-content,
@@ -317,7 +320,7 @@ body.dark .home p {
 
 
 body.dark .home {
-    background: #121212 !important;  /* or a dark image if you want */
+    background: #121212 !important; 
     color: #ffffff !important;
   }
   body.dark .home {
@@ -492,9 +495,9 @@ body.dark .home {
   
   .social-on-scroll {
     display: flex;
-    justify-content: flex-start;  /* move icons to the left */
+    justify-content: flex-start;  
     gap: 1.5rem;
-    margin: 2rem 3rem;            /* space from bottom and sides */
+    margin: 2rem 3rem;          
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -706,19 +709,23 @@ img {max-width: 100%;
   margin: auto;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .navbar {
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
   }
 
   .about-me {
     flex-direction: column;
     text-align: center;
+    font-size: 1.3rem;
   }
 
   .certifications {
     grid-template-columns: 1fr;
+    font-size: 1.3rem;
    
   }
 
@@ -729,4 +736,42 @@ img {max-width: 100%;
   p {
     font-size: 1rem;
   }
+}
+.
+.projects {
+  width: 100%;
+  max-width: 1200px; /* limit max width on big screens */
+  margin: 0 auto; /* center horizontally */
+  padding: 0 1rem; /* side padding for mobile */
+}
+.hero {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+  word-break: break-word; /* important! */
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+}
+
+/* responsive fix for mobile */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+body {
+  overflow-x: hidden;
 }
