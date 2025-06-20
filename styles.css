@@ -56,30 +56,33 @@
 
 .hero {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   height: 100vh; 
   padding: 0 1rem; 
-  text-align: center; 
+  overflow: hidden; 
 }
 
 .hero-content {
-  max-width: 90%; 
+  max-width: 600px;
+  width: 100%;
 }
 
 .typewriter {
-  font-size: 2rem; 
-  word-break: break-word; 
+  font-size: 2rem;
+  word-wrap: break-word; 
 }
 
 .typing-line {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .see-work {
   margin-top: 2rem;
 }
+
 
 
   .btn {
