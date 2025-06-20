@@ -17,7 +17,6 @@
 
   <header>
     <nav class="navbar">
-      <div class="menu-toggle">☰</div>
      
       <h1 class="logo">Arpitha Raj</h1>
       
@@ -38,13 +37,12 @@
   
 
   <section id="home" class="section hero">
-      <section id="home" class="hero">
-
-
+    
       <div class="hero-content">
         <h2 class="typewriter">Hi, I’m Arpitha, a Frontend Developer</h2>
         <p class="typing-line">I love building beautiful websites and exploring UI/UX.</p>
-        
+      
+        <!-- this should not be inside the animated block -->
         <a href="#projects" class="btn see-work">see my work</a>
       </div>
       
@@ -238,14 +236,7 @@
     sections.forEach(section => {
       appearOnScroll.observe(section);
     });
-    const toggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
   </script>
-  
   
 
 
