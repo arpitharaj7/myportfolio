@@ -54,33 +54,28 @@
   }
   
 
-.hero {
+  .hero {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh; 
-  padding: 0 1rem; 
-  text-align: center; 
-}
+  justify-content: center;
+  height: 100vh; /* make hero take full viewport height */
+  padding: 0 1rem; /* add side padding for mobile */
+  text-align: center; /* center text */
+  } 
 
-.hero-content {
-  max-width: 90%; 
-}
+  .hero-content h2 {
+  font-size: 2rem; /* adjust as needed for mobile */
+  word-break: break-word; /* allow long words to wrap */
+ }
 
-.typewriter {
-  font-size: 2rem; 
-  word-break: break-word; 
-}
-
-.typing-line {
+ .hero-content p {
   margin-top: 1rem;
   font-size: 1rem;
-}
+ }
 
-.see-work {
+ .hero-content .btn {
   margin-top: 2rem;
-}
-
+ }
 
   .btn {
     background: #ff8c94;
