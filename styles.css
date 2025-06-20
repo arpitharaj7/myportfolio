@@ -53,12 +53,14 @@
 
   }
   
+
   .hero {
     background: linear-gradient(to right, #ffe0e9, #fdf6f0);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 4rem 1.5rem;
   }
   
   .hero-content h2 {
@@ -121,10 +123,17 @@
     transform: scale(1.05);
   }
   
+  .projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem; 
+  }
+
   .projects h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    
   }
   
   .projects-grid {
@@ -190,6 +199,11 @@
     align-self: flex-end;
   }
   
+  .typewriter-wrapper {
+   overflow: hidden;
+   width: 100%;
+  }
+
   .toggle-dark {
     position: fixed;
     top: 1.5rem;      
@@ -300,7 +314,7 @@ body.dark .home {
   
   }
   
-  body.dark .home h1,
+ body.dark .home h1,
 body.dark .home p {
   color: #f1f1f1;
 }
@@ -658,7 +672,7 @@ body.dark .home {
   color: #ff8c94;
 }
 
-/* dark mode support */
+
 body.dark .cert-card {
   background: #2c2c2c;
   color: #f1f1f1;
@@ -728,6 +742,22 @@ img {max-width: 100%;
     font-size: 2rem;
     cursor: pointer;
     align-self: flex-end; 
+  }
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  word-wrap: break-word; 
+}
+
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2rem; 
+  }
+
+  .hero-content p {
+    font-size: 1rem; 
   }
 }
 
