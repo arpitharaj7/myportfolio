@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   
-  body {
+  html, body {
     font-family: 'Poppins', sans-serif;
     background: #fdf6f0;
     color: #333;
@@ -54,25 +54,34 @@
   }
   
 
-  .hero {
-    background: linear-gradient(to right, #ffe0e9, #fdf6f0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 4rem 1.5rem;
-  }
-  
-  .hero-content h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-content p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-  }
-  
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  padding: 0 1rem; 
+  text-align: center; 
+}
+
+.hero-content {
+  max-width: 90%; 
+}
+
+.typewriter {
+  font-size: 2rem; 
+  word-break: break-word; 
+}
+
+.typing-line {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.see-work {
+  margin-top: 2rem;
+}
+
+
   .btn {
     background: #ff8c94;
     color: white;
