@@ -678,8 +678,6 @@ body.dark .cert-card {
 
 
 
-
-
 @keyframes bgShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -706,31 +704,33 @@ img {max-width: 100%;
   margin: auto;
 
 }
-@media (max-width: 500px) {
+
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+    align-items: flex-start; 
+    padding: 1rem 2rem;
+  }
+
+  .nav-links {
+    flex-direction: column; 
+    width: 100%;
+    display: none; 
+    gap: 1rem; 
+  }
+
+  .nav-links.show {
+    display: flex; 
+  }
+
+  .menu-toggle {
+    display: block; 
     font-size: 2rem;
+    cursor: pointer;
+    align-self: flex-end; 
   }
+}
 
-  .about-me {
-    flex-direction: column;
-    text-align: center;
-    font-size: 1.3rem;
-  }
-
-  .certifications {
-    grid-template-columns: 1fr;
-    font-size: 1.3rem;
-   
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
+.menu-toggle {
+  display: none;
 }
