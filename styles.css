@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   
-  html, body {
+  body {
     font-family: 'Poppins', sans-serif;
     background: #fdf6f0;
     color: #333;
@@ -53,30 +53,24 @@
 
   }
   
-
   .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* make hero take full viewport height */
-  padding: 0 1rem; /* add side padding for mobile */
-  text-align: center; /* center text */
-  } 
-
+    background: linear-gradient(to right, #ffe0e9, #fdf6f0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
   .hero-content h2 {
-  font-size: 2rem; /* adjust as needed for mobile */
-  word-break: break-word; /* allow long words to wrap */
- }
-
- .hero-content p {
-  margin-top: 1rem;
-  font-size: 1rem;
- }
-
- .hero-content .btn {
-  margin-top: 2rem;
- }
-
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  
   .btn {
     background: #ff8c94;
     color: white;
@@ -127,17 +121,10 @@
     transform: scale(1.05);
   }
   
-  .projects {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem; 
-  }
-
   .projects h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    
   }
   
   .projects-grid {
@@ -203,16 +190,11 @@
     align-self: flex-end;
   }
   
-  .typewriter-wrapper {
-   overflow: hidden;
-   width: 100%;
-  }
-
   .toggle-dark {
     position: fixed;
-    top: 1.5rem;      
-    right: 2rem;      
-    z-index: 9999;   
+    top: 1.5rem;      /* add some spacing from the top */
+    right: 2rem;      /* space from the right */
+    z-index: 9999;    /* stays on top of everything */
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
     border-radius: 50px;
@@ -269,7 +251,7 @@
     
   }
   
-
+  /* sections that have white background by default */
   body.dark header,
   body.dark footer,
   body.dark .skill,
@@ -311,19 +293,19 @@
     padding: 2rem;
   }
 
-
+  /* fix for home section text visibility in dark mode */
 body.dark .home {
     background-color: #1e1e1e;
     color: #f1f1f1;
   
   }
   
- body.dark .home h1,
+  body.dark .home h1,
 body.dark .home p {
   color: #f1f1f1;
 }
 
-
+/* full fix for dark mode visibility in home section */
 body.dark #home,
 body.dark .home,
 body.dark .home-content,
@@ -335,7 +317,7 @@ body.dark .home p {
 
 
 body.dark .home {
-    background: #121212 !important; 
+    background: #121212 !important;  /* or a dark image if you want */
     color: #ffffff !important;
   }
   body.dark .home {
@@ -510,9 +492,9 @@ body.dark .home {
   
   .social-on-scroll {
     display: flex;
-    justify-content: flex-start;  
+    justify-content: flex-start;  /* move icons to the left */
     gap: 1.5rem;
-    margin: 2rem 3rem;          
+    margin: 2rem 3rem;            /* space from bottom and sides */
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -676,7 +658,7 @@ body.dark .home {
   color: #ff8c94;
 }
 
-
+/* dark mode support */
 body.dark .cert-card {
   background: #2c2c2c;
   color: #f1f1f1;
@@ -692,6 +674,8 @@ body.dark .cert-card {
   line-height: 1.4;
   margin: 0;
 }
+
+
 
 
 
@@ -722,80 +706,27 @@ img {max-width: 100%;
   margin: auto;
 
 }
-
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start; 
-    padding: 1rem 2rem;
+    align-items: center;
   }
 
-  .nav-links {
-    flex-direction: column; 
-    width: 100%;
-    display: none; 
-    gap: 1rem; 
+  .about-me {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .nav-links.show {
-    display: flex; 
+  .certifications {
+    grid-template-columns: 1fr;
+   
   }
 
-  .menu-toggle {
-    display: block; 
-    font-size: 2rem;
-    cursor: pointer;
-    align-self: flex-end; 
-  }
-}
-
-.hero {
-  text-align: center;
-  padding: 5rem 1rem; 
-}
-
-.hero-content {
-  max-width: 600px;
-  margin: 0 auto;
-  word-break: break-word; 
-}
-
-.hero-content h2 {
-  font-size: 2.5rem; 
-  line-height: 1.2;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-}
-
-@media (max-width: 768px) {
-  .hero-content h2 {
-    font-size: 1.8rem;
+  h2 {
+    font-size: 1.5rem;
   }
 
-  .hero-content p {
+  p {
     font-size: 1rem;
   }
-}
-
-
-.menu-toggle {
-  display: none;
-}
-
-.projects {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.projects-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-body {
-  overflow-x: hidden;
 }
