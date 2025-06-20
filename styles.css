@@ -733,18 +733,26 @@ img {max-width: 100%;
 
 .project-card {
   position: relative;
+  background: #fff;
+  border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
 .card-link {
   position: absolute;
-  bottom: 1rem;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%) scale(0.8);
   background: #ff8c94;
   color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
   text-decoration: none;
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -752,5 +760,11 @@ img {max-width: 100%;
 
 .project-card:hover .card-link {
   opacity: 1;
-  transform: translateX(-50%) translateY(-10px);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Optional: fade the content slightly on hover */
+.project-card:hover .project-content {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
 }
