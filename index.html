@@ -4,84 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arpitha Raj | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script> 
-
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
- 
-  
-
-
   <header>
     <nav class="navbar">
-     
       <h1 class="logo">Arpitha Raj</h1>
-      
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
-       
       </ul>
     </nav>
-   
-    
-
   </header>
 
-  
-
   <section id="home" class="section hero">
-    
-      <div class="hero-content">
-        <h2 class="typewriter">Hi, I’m Arpitha, a Frontend Developer</h2>
-        <p class="typing-line">I love building beautiful websites and exploring UI/UX.</p>
-      
-        <!-- this should not be inside the animated block -->
-        <a href="#projects" class="btn see-work">see my work</a>
-      </div>
-      
-      <script>
-        window.addEventListener('DOMContentLoaded', () => {
-          const para = document.querySelector('.typewriter-p');
-          setTimeout(() => {
-            para.classList.remove('hidden');
-          }, 3100); 
-        });
-      </script>
-      
-
-      
+    <div class="hero-content">
+      <h2 class="typewriter">Hi, I'm Arpitha, a Frontend Developer</h2>
+      <p class="typing-line">I love building beautiful websites and exploring UI/UX.</p>
+      <a href="#projects" class="btn see-work">See My Work</a>
     </div>
   </section>
 
-  <section id="about" class="section"><section id="about" class="section about">
+  <section id="about" class="section about">
     <h2>About Me</h2>
-    <section id="about" class="section about">
-      <div class="about-container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; justify-content: center;">
-        
-        
-        <div class="about-image" style="flex: 0 0 200px;">
-          <img src='assets\images\my-photo.jpg' alt="Arpitha's Photo" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);" />
-        </div>
-    
-        
-        <div class="about-text" style="flex: 1; min-width: 250px;">
-         
-          <p>Hi, I'm Arpitha, a passionate front-end developer and UI/UX designer in the making. I love building beautiful and interactive websites that not only function smoothly but also provide great user experiences. I’m currently in my Pre-Final year of Computer Science and working on my portfolio. </p>
-        </div>
-    
+    <div class="about-container">
+      <div class="about-image">
+        <img src="assets/images/my-photo.jpg" alt="Arpitha's Photo" />
       </div>
-    </section>
-    
+      <div class="about-text">
+        <p>Hi, I'm Arpitha, a passionate front-end developer and UI/UX designer in the making. I love building beautiful and interactive websites that not only function smoothly but also provide great user experiences. I'm currently in my Pre-Final year of Computer Science and working on my portfolio.</p>
+      </div>
+    </div>
   </section>
-  </section>
-  <section id="skills" class="section"><section id="skills" class="section skills">
+
+  <section id="skills" class="section skills">
     <h2>My Skills</h2>
     <div class="skills-grid">
       <div class="skill">HTML5</div>
@@ -93,128 +61,108 @@
       <div class="skill">Responsive Design</div>
     </div>
   </section>
-  </section>
-  <section id="projects" class="section"><section id="projects" class="section projects">
+
+  <section id="projects" class="section projects">
     <h2>Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        
-        <h3>AI-Powered Weather-Based Outfit Recommendation system with Virtual Try-On</h3>
-        <p>A personalized fashion solution that uses real-time weather data and AI to suggest suitable outfits, enhanced with a virtual try-on feature and seamless e-commerce integration.
-        </p>
+        <h3>AI-Powered Weather-Based Outfit Recommendation System</h3>
+        <p>A personalized fashion solution that uses real-time weather data and AI to suggest suitable outfits, enhanced with a virtual try-on feature and seamless e-commerce integration.</p>
         <a href="https://forecastfit.vercel.app/" class="card-link" target="_blank">View Project</a>
-       </div>
       </div>
 
-      <div class="projects-grid">
       <div class="project-card">
-        
         <h3>Faculty Recommender Bot</h3>
-        <p>Faculty Bot is a smart virtual assistant that helps students get quick info about professors, courses, and office hours, making communication easier and faster.
-        </p>
+        <p>Faculty Bot is a smart virtual assistant that helps students get quick info about professors, courses, and office hours, making communication easier and faster.</p>
         <a href="https://facultybot.vercel.app/" class="card-link" target="_blank">View Project</a>
       </div>
-      </div>
-  
-      <div class="projects-grid">
-        <div class="project-card">
-          
-          <h3>Arduino Uno Bluetooth Car</h3>
-          <p>Built a smartphone-controlled car using Arduino UNO and Bluetooth, showcasing basic robotics and wireless control.
-          </p>
-        </div>
-      
-        <div class="projects-grid">
-        <div class="project-card">
-         
-          <h3>Smoke Detector</h3>
-          <p>Developed a simple smoke detection system using sensors and Arduino to alert users of potential fire hazards.
-          </p>
-        </div>
 
+      <div class="project-card">
+        <h3>Arduino Uno Bluetooth Car</h3>
+        <p>Built a smartphone-controlled car using Arduino UNO and Bluetooth, showcasing basic robotics and wireless control.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Smoke Detector</h3>
+        <p>Developed a simple smoke detection system using sensors and Arduino to alert users of potential fire hazards.</p>
+      </div>
+    </div>
   </section>
-  </section>
+
   <section id="certifications" class="section">
     <h2 class="section-title">Certifications</h2>
     <div class="cert-grid">
-      <a href="assets\certications\Developing Secure Software Certification.pdf" target="_blank" class="cert-card">
+      <a href="assets/certications/Developing Secure Software Certification.pdf" target="_blank" class="cert-card">
         <h3>Developing Secure Software</h3>
         <p>Completed a course on secure software development, emphasizing key practices to identify vulnerabilities and enhance software security.</p>
       </a>
       
-      <a href="assets\certications\GenAI certification.pdf" target="_blank" class="cert-card">
+      <a href="assets/certications/GenAI certification.pdf" target="_blank" class="cert-card">
         <h3>Gen AI</h3>
         <p>Completed a comprehensive course on Generative AI, covering tools and concepts in artificial intelligence to understand and apply generative models effectively.</p>
       </a>
       
-      <a href="assets\certications\How to Say No without Guilt certification.pdf" target="_blank" class="cert-card">
+      <a href="assets/certications/How to Say No without Guilt certification.pdf" target="_blank" class="cert-card">
         <h3>How to Say No Without Guilt</h3>
         <p>Completed a micro-course on setting personal boundaries and mastering assertive communication skills for personal and professional growth.</p>
       </a>
       
-      <a href="assets\certications\hack-a-bot certificate.pdf" target="_blank" class="cert-card">
+      <a href="assets/certications/hack-a-bot certificate.pdf" target="_blank" class="cert-card">
         <h3>Hack-a-Bot by UiPath</h3>
         <p>Participated in a bot development hackathon using UiPath, building automation solutions in a collaborative and competitive environment.</p>
       </a>
       
-      <a href="assets\certications\hindu college certificate.pdf" target="_blank" class="cert-card">
+      <a href="assets/certications/hindu college certificate.pdf" target="_blank" class="cert-card">
         <h3>Hindu College Green Chemistry Conference</h3>
-        <p>Participated and presented a poster in the “International Conference and Workshop on Twelve Principles of Green Chemistry and UN-SDGs” organized by Hindu College, University of Delhi, focusing on sustainable science and global goals.</p>
+        <p>Participated and presented a poster in the "International Conference and Workshop on Twelve Principles of Green Chemistry and UN-SDGs" organized by Hindu College, University of Delhi.</p>
       </a>
 
-      <a href="assets\certications\ICRAAST certificate.png" target="_blank" class="cert-card">
+      <a href="assets/certications/ICRAAST certificate.png" target="_blank" class="cert-card">
         <h3>ICRAMM Conference</h3>
-        <p>Presented the research paper titled “Assessing of Water Contaminants Using Different Physicochemical Parameters: A Study of Yamuna River (Delhi)” at the 6th International Conference on Recent Advances in Materials and Manufacturing (ICRAMM), held in hybrid mode at Velalar College of Engineering and Technology.</p>
+        <p>Presented research paper on water contaminants assessment using physicochemical parameters at the 6th International Conference on Recent Advances in Materials and Manufacturing.</p>
       </a>
 
-      <a href="assets\certications\web3 APTOS certificate.png" target="_blank" class="cert-card">
+      <a href="assets/certications/web3 APTOS certificate.png" target="_blank" class="cert-card">
         <h3>Web3 Aptos</h3>
         <p>Participated in a Web3 training session focused on building decentralized applications using the Aptos blockchain ecosystem.</p>
       </a>
 
-      <a href="assets\certications\CertificateOfCompletion_Artificial Intelligence Foundations Machine Learning.pdf" target="_blank" class="cert-card">
-        <h3>Artificial Intelligence Foundations: Machine Learning</h3>
-        <p>I gained foundational knowledge of machine learning, including core concepts like supervised and unsupervised learning, algorithms such as decision trees and k-means, and real-world AI applications. this course helped me build a solid base to explore advanced AI techniques.</p>
+      <a href="assets/certications/CertificateOfCompletion_Artificial Intelligence Foundations Machine Learning.pdf" target="_blank" class="cert-card">
+        <h3>AI Foundations: Machine Learning</h3>
+        <p>Gained foundational knowledge of machine learning, including supervised and unsupervised learning, algorithms, and real-world AI applications.</p>
       </a>
 
-      <a href="assets\certications\CertificateOfCompletion_Artificial Intelligence Foundations Neural Networks.pdf" target="_blank" class="cert-card">
-        <h3>Artificial Intelligence Foundations: Neural Networks</h3>
-        <p>This course introduced me to neural networks, covering the architecture and working of perceptrons, activation functions, and how neural networks are trained. it deepened my understanding of machine learning by focusing on how intelligent systems learn from data through layered computations.</p>
+      <a href="assets/certications/CertificateOfCompletion_Artificial Intelligence Foundations Neural Networks.pdf" target="_blank" class="cert-card">
+        <h3>AI Foundations: Neural Networks</h3>
+        <p>Learned neural network architecture, perceptrons, activation functions, and how neural networks are trained for intelligent systems.</p>
       </a>
-
-      
-
-
-      
     </div>
   </section>
-  
-  
-  <section id="contact" class="section"><section id="contact" class="section contact">
+
+  <section id="contact" class="section contact">
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/mwplwpqw" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="your name" required>
-      <input type="email" name="email" placeholder="your email" required>
-      <textarea name="message" rows="5" placeholder="your message" required></textarea>
-      <button type="submit" class="btn">send message</button>
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
     </form>
-    
   </section>
-  </section>
+
   <div class="social-on-scroll" id="socialIcons">
     <a href="https://github.com/arpitharaj7" target="_blank" aria-label="GitHub">
-      <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
+      <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 0C5.37 0 0 5.37 0 12a12 12 0 008.21 11.41c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.47 11.47 0 016 0c2.28-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.93.43.38.81 1.13.81 2.28v3.38c0 .32.22.7.82.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z"/>
       </svg>
     </a>
    
-    <a href="www.linkedin.com/in/arpitha-raj-2a3155248" target="_blank" aria-label="LinkedIn">
-      <svg class="lucide-icon github icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#0077B5">
+    <a href="https://www.linkedin.com/in/arpitha-raj-2a3155248" target="_blank" aria-label="LinkedIn">
+      <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
         <path d="M100.28 448H7.4V148.9h92.88zm-46.44-341C24.07 107 0 82.93 0 53.52 0 24.07 24.07 0 53.84 0S107.6 24.07 107.6 53.52c.04 29.41-24.04 53.48-53.76 53.48zM447.9 448h-92.6V302.4c0-34.7-12.4-58.4-43.4-58.4-23.7 0-37.9 15.9-44.2 31.2-2.3 5.6-2.8 13.4-2.8 21.3V448h-92.6s1.2-269.2 0-297h92.6v42c12.3-19 34.4-46.2 83.6-46.2 61 0 106.8 39.8 106.8 125.3V448z"/>
       </svg>
     </a>
     
-    <a href="mailto:yourmail@gmail.com" target="_blank" aria-label="Gmail">
+    <a href="mailto:arpitharaj@gmail.com" target="_blank" aria-label="Gmail">
       <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
         <path fill="#EA4335" d="M4 12v24l12-9v-6L4 12z"/>
         <path fill="#FBBC05" d="M4 36h8V25l-8-6v15z"/>
@@ -229,30 +177,7 @@
         <path d="M18.36 3H21L14.41 10.35L22.25 21H15.65L10.6 14.67L4.9 21H2L9 13.17L1.5 3H8.3L13 8.92L18.36 3ZM17.13 19H18.9L6.75 5H4.85L17.13 19Z" />
       </svg>
     </a>
-    
   </div>
-  
-  <script>
-    const sections = document.querySelectorAll("section");
-  
-    const appearOnScroll = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, {
-      threshold: 0.2,
-    });
-  
-    sections.forEach(section => {
-      appearOnScroll.observe(section);
-    });
-  </script>
-  
-
-
-  
 
   <footer>
     <p>© 2025 Arpitha Raj. All rights reserved.</p>

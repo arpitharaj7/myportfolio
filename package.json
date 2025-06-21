@@ -1,0 +1,25 @@
+
+{
+  "name": "arpitha-portfolio",
+  "version": "1.0.0",
+  "description": "Arpitha Raj's Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server . -p 3000 -o",
+    "start": "http-server . -p 3000",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "developer",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Arpitha Raj",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
